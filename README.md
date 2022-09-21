@@ -6,4 +6,4 @@
 
 ## Test
     1. Criei um endpoint get chamado weather, podendo passar /list?city={nome de uma cidade do Brasil} e /history que retorna histórico com as cidades que foram consultadas.
-    2. Na posta postman tem os collections
+    2. Na pasta postman tem os collections
