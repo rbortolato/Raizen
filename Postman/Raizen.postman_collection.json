@@ -1,0 +1,101 @@
+{
+	"info": {
+		"_postman_id": "7b94e28d-2cf5-42b9-ae89-cd5f3d7f0079",
+		"name": "Raizen",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "20773573"
+	},
+	"item": [
+		{
+			"name": "Original",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "api.openweathermap.org/data/2.5/forecast?q=Blumenau,br&APPID=c6c4012c481dc67e8438162183c9fbfa&units=metric&lang=pt_br",
+					"host": [
+						"api",
+						"openweathermap",
+						"org"
+					],
+					"path": [
+						"data",
+						"2.5",
+						"forecast"
+					],
+					"query": [
+						{
+							"key": "q",
+							"value": "Blumenau,br"
+						},
+						{
+							"key": "APPID",
+							"value": "c6c4012c481dc67e8438162183c9fbfa"
+						},
+						{
+							"key": "units",
+							"value": "metric"
+						},
+						{
+							"key": "lang",
+							"value": "pt_br"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "list",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/weather/list?city=Blumenau",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"weather",
+						"list"
+					],
+					"query": [
+						{
+							"key": "city",
+							"value": "Blumenau"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "history",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://127.0.0.1:5000/weather/history",
+					"protocol": "http",
+					"host": [
+						"127",
+						"0",
+						"0",
+						"1"
+					],
+					"port": "5000",
+					"path": [
+						"weather",
+						"history"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
